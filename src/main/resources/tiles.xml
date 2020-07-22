@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="base-definition"
+		template="/WEB-INF/view/Layout/defaultLayout.jsp">
+
+		<put-attribute name="header"
+			value="/WEB-INF/view/Layout/header.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/view/Layout/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/view/Layout/footer.jsp" />
+	</definition>
+	
+	<definition name="hello" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/view/hello.jsp" />
+	</definition>
+	<definition name="404" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/view/404.jsp" />
+	</definition>
+	<definition name="error" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/view/error.jsp" />
+	</definition>
+	
+	<definition name="addUser" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/view/user/addUser.jsp" />
+	</definition>
+	<definition name="editUser" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/view/user/editUser.jsp" />
+	</definition>
+	<definition name="listUsers" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/view/user/listUsers.jsp" />
+	</definition>
+	<definition name="viewUser" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/view/user/viewUser.jsp" />
+	</definition>
+	
+	<definition name="addProduct" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/view/product/addProduct.jsp" />
+	</definition>
+	<definition name="viewProduct" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/view/product/viewProduct.jsp" />
+	</definition>
+	<definition name="editProduct" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/view/product/editProduct.jsp" />
+	</definition>
+	<definition name="listProducts" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/view/product/listProducts.jsp" />
+	</definition>
+</tiles-definitions>
